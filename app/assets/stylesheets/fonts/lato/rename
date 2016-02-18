@@ -1,0 +1,3 @@
+for f in *.eot?; do 
+mv -- "$f" "${f%.eot?}.eot"
+done
