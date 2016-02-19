@@ -20,4 +20,27 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  operation_revenue: "Operation Revenue"
+  turnover: "Turnover"
+  net_turnover: "Net Turnover"
+  subventions: "Subventions"
+  other_operating_revenue: "Other operating revenue"
+  operation_revenue_total: "Total"
+  
+  operating_cost: "Operating cost"
+  goods: "Goods"
+  stock_variation: "Stock variation"
+  contract_cost: "Contract cost"
+  other_external_services: "Other external services"
+  taxes: "Taxes"
+  salaries: "Salaries"
+  amortization: "Amortization"
+  depreciation: "Depreciation"
+  other_operating_cost: "Other operating cost"
+  registration_cost: "Registration cost"
+  accountant: "Accountant"
+  trips_and_restaurants: "Trips and restaurants"
+  insurance: "Insurance"
+  office_supplies: "Office Supplies"
+  operating_cost_total: "Total"
+  
