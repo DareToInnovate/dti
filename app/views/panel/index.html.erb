@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <% if (params.has_key?(:locale))
+        if (params[:locale] == :fr) 
+            I18n.locale = 'fr'
+        else 
+            I18n.locale = 'en'
+        end
+       end
+    %>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
@@ -141,7 +149,11 @@
           <li>
             <div class="btn-group">
               <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
-                Français
+                <%= if I18n.locale == :en 
+                    link_to t("switch_language"), :locale => 'fr' 
+                else 
+                    link_to t("switch_language"), :locale => 'en' 
+                end %>
               </button>
             </div>
           </li>
@@ -167,7 +179,7 @@
       <!------------ Starting of Dynamic Block------ -->
     <div id="dyanamicBlockStartsDiv">      
     <div class="pageheader">
-      <h2>Dashboard <span>welcome back!</span></h2>
+      <h2><%= t("dashboard") %> <span>welcome back!</span></h2>
       <div class="breadcrumb-wrapper">
         <span class="label">You are here:</span>
         <ol class="breadcrumb">
