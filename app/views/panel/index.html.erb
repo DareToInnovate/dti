@@ -7,6 +7,7 @@
   <meta name="author" content="">
   <title>Dare to Innovate</title>
   <%= stylesheet_link_tag "style.default" %>
+  <%= stylesheet_link_tag "font-awesome.min.css" %>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <%= javascript_include_tag("html5shiv") %>
@@ -19,7 +20,7 @@
   <div class="leftpanel">
     
     <div class="logopanel">
-        <h1><a href="dashboard.html"><span><%= image_tag("DTI_small_logo.jpg", width:"44", height:"40"); %></span> DTI App</a></h1>
+        <h1><a href="dashboard.html"><span><%= image_tag("DTI_small_logo.jpg", width:"44", height:"40") %></span> Dare to Innovate</a></h1>
     </div><!-- logopanel -->
     
     <div class="leftpanelinner">
@@ -27,10 +28,10 @@
         <!-- This is only visible to small devices -->
         <div class="visible-xs hidden-sm hidden-md hidden-lg">   
             <div class="media userlogged">
-                <%= image_tag("photos/loggeduser.png", class:"media-object"); %>
+                <%= image_tag("photos/loggeduser.jpg", class:"media-object") %>
 
                 <div class="media-body">
-                    <h4>Warren Paull</h4>
+                    <h4>Meghan McCormick</h4>
                     <span>Administrator</span>
                 </div>
             </div>
@@ -43,66 +44,26 @@
             </ul>
         </div>
       
-      <h5 class="sidebartitle">Navigation</h5>
+		<h5 class="sidebartitle">Navigation</h5>
       <ul class="nav nav-pills nav-stacked nav-DemoCRM">
         <li class="active"><a href="dashboard.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-        <li class="nav-parent"><a href="#"><i class="fa fa-user"></i> <span>Users</span></a>
-          <ul class="children">
-            <li><a href="New-User-Type.html"><i class="fa fa-caret-right"></i> New User Type</a></li> 
-            <li><a href="List-User-Types.html"><i class="fa fa-caret-right"></i> List User Types</a></li> 
-            <li><a href="New-User.html"><i class="fa fa-caret-right"></i> New User</a></li> 
-            <li><a href="List-Users.html"><i class="fa fa-caret-right"></i> List Users</a></li> 
-          </ul>
         </li>
         <!--<li class="nav-parent active nav-active"><a href="#"><i class="fa fa-users"></i> <span>Entrepreneurs</span></a>-->
-         <li class="nav-parent"><a href="#"><i class="fa fa-users"></i> <span>Entrepreneurs</span></a>
-         <ul class="children">
-            <li><a href="New-Entrepreneur.html"><i class="fa fa-caret-right"></i> New Entrepreneur</a></li> 
-            <li><a href="List-Entrepreneurs.html"><i class="fa fa-caret-right"></i> List Entrepreneurs</a></li> 
-          </ul>
+         <li><a href="#"><i class="fa fa-institution"></i> <span>My Organization</span></a>
         </li>
-        <li class="nav-parent"><a href="#"><i class="fa fa-money"></i> <span>Entrepreneur Funds</span></a>
-         <ul class="children">
-            <li><a href="Add-Entrepreneur-Fund.html"><i class="fa fa-caret-right"></i> Add Entrepreneur Fund</a></li> 
-            <li><a href="List-Entrepreneur-Funds.html"><i class="fa fa-caret-right"></i> List Entrepreneur Funds</a></li> 
-          </ul>
+        <li><a href="#"><i class="fa fa-users"></i> <span>My Entrepreneurs</span></a>
+          
+
+        <li><a href="#"><i class="fa fa-money"></i> <span>My Funds</span></a>
+         
         </li>
-        <li class="nav-parent"><a href="#"><i class="fa fa-arrow-circle-right"></i> <span>Income</span></a>
-         <ul class="children">
-            <li><a href="Add-Income.html"><i class="fa fa-caret-right"></i> New Income</a></li> 
-            <li><a href="List-Income.html"><i class="fa fa-caret-right"></i> List Income</a></li> 
-          </ul>
+        <li><a href="#"><i class="fa fa-graduation-cap"></i> <span>My Learning</span></a>
+        
         </li>
-        <li class="nav-parent"><a href="#"><i class="fa fa-arrow-circle-left"></i> <span>Expense</span></a>
-         <ul class="children">
-            <li><a href="Add-Expense.html"><i class="fa fa-caret-right"></i> New Expense</a></li> 
-            <li><a href="List-Expense.html"><i class="fa fa-caret-right"></i> List Expense</a></li> 
-          </ul>
+        <li><a href="#"><i class="fa fa-list-alt"></i> <span>My Surveys</span></a>
+         
         </li>
-        <li class="nav-parent"><a href="#"><i class="fa fa-list-alt"></i> <span>Survey</span></a>
-         <ul class="children">
-            <li><a href="New-Invitation-Status.html"><i class="fa fa-caret-right"></i> New Invitation Status Type</a></li> 
-            <li><a href="List-Invitation-Status.html"><i class="fa fa-caret-right"></i> List Invitation Status Types</a></li> 
-             <li><a href="New-Survey-Invitation.html"><i class="fa fa-caret-right"></i> New Survey Invitation</a></li> 
-             <li><a href="List-Survey-Invitations.html"><i class="fa fa-caret-right"></i> List Survey Invitations</a></li> 
-            <li><a href="New-Questionnaire-Type.html"><i class="fa fa-caret-right"></i> New Questionnaire Type</a></li> 
-            <li><a href="List-Questionnaire-Types.html"><i class="fa fa-caret-right"></i> List Questionnaire Types</a></li> 
-             <li><a href="New-Survey-Question.html"><i class="fa fa-caret-right"></i> New Survey Question</a></li> 
-            <li><a href="List-Survey-Questions.html"><i class="fa fa-caret-right"></i> List Survey Questions</a></li>
-            <li><a href="New-Survey-Result.html"><i class="fa fa-caret-right"></i> New Survey Result</a></li> 
-            <li><a href="List-Survey-Results.html"><i class="fa fa-caret-right"></i> List Survey Results</a></li>
-           
-          </ul>
-        </li>
-         <li class="nav-parent"><a href="email.html"><i class="fa fa-cog"></i> <span>Settings</span></a>
-          <ul class="children">
-            <li><a href="New-Country.html"><i class="fa fa-caret-right"></i> New Country</a></li>
-            <li><a href="List-Countries.html"><i class="fa fa-caret-right"></i> List Countries</a></li>
-            <li><a href="New-Currency.html"><i class="fa fa-caret-right"></i> New Currency</a></li>
-            <li><a href="List-Currencies.html"><i class="fa fa-caret-right"></i> List Currencies</a></li>
-            <li><a href="New-Receipt-Doc-Type.html"><i class="fa fa-caret-right"></i> New Receipt Doc Type</a></li>
-            <li><a href="List-Receipt-Doc-Types.html"><i class="fa fa-caret-right"></i> List Receipt Doc Types</a></li>
-          </ul>
+         <li><a href=""><i class="fa fa-cog"></i> <span>Settings</span></a>
          </li>
       <!-- <li class="nav-parent"><a href="email.html"><i class="fa fa-tasks"></i> <span>Tasks</span></a>
          <ul class="children">
@@ -123,7 +84,9 @@
         
       </ul>
       
-     
+      <div style='position:fixed;z-index:-1;bottom:5px;left:2px;'>
+        <%= image_tag("mpacte_logo.png", height:'30') %>
+      </div>
       
     </div><!-- leftpanelinner -->
   </div><!-- leftpanel -->
@@ -141,15 +104,15 @@
           <li>
             <div class="btn-group">
               <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
-                Français
+              <%= image_tag("flag_english.png", height:'20') %> &nbsp;&nbsp;&nbsp; <%= image_tag("flag_france.png", height:'20', style:'opacity:.3') %>
               </button>
             </div>
           </li>
           <li>
             <div class="btn-group">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                <%= image_tag("photos/loggeduser.png") %>
-                Warren Paull
+                <%= image_tag("photos/loggeduser.jpg") %>
+                Meghan
                 <span class="caret"></span>
               </button>
               <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
@@ -167,14 +130,7 @@
       <!------------ Starting of Dynamic Block------ -->
     <div id="dyanamicBlockStartsDiv">      
     <div class="pageheader">
-      <h2>Dashboard <span>welcome back!</span></h2>
-      <div class="breadcrumb-wrapper">
-        <span class="label">You are here:</span>
-        <ol class="breadcrumb">
-          <li><a href="dashboard.html">DTI App</a></li>
-          <li class="active">Homepage</li>
-        </ol>
-      </div>
+<h2>Dashboard </h2>
     </div>
     
     <div class="contentpanel">
@@ -184,17 +140,48 @@
       <div class="row">
         
         <div class="col-sm-6 col-md-3">
+<div class="panel panel-danger panel-stat">
+            <div class="panel-heading" style='height:135px;'>
+              
+              <div class="stat"  style='width:100%;'>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <span class="fa fa-exclamation-triangle" style='font-size:52px;' />
+                  </div>
+                  <div class="col-xs-8">
+                    <small class="stat-label">Notifications</small>
+                    <h1>4 <span style='font-size:16px;'>Unread</span></h1>
+                  </div>
+                </div><!-- row -->
+                
+ <div class="mb15"></div>
+                  <div class="col-xs-6">
+                    <small class="stat-label">Critical</small>
+                    <h4>6</h4>
+                  </div>
+                  
+                  <div class="col-xs-6">
+                    <small class="stat-label">Suggestions</small>
+                    <h4>12</h4>
+                  </div>
+            </div><!-- panel-heading -->
+          </div><!-- panel -->
+        </div><!-- col-sm-6 -->
+        </div><!-- col-sm-6 -->
+          
+                  
+        <div class="col-sm-6 col-md-3">
           <div class="panel panel-success panel-stat">
-            <div class="panel-heading">
+            <div class="panel-heading" style='height:135px;'>
               
               <div class="stat">
                 <div class="row">
                   <div class="col-xs-4">
-                    <%= image_tag("is-user.png") %>
+                    <%= image_tag('is-user.png') %>
                   </div>
                   <div class="col-xs-8">
-                    <small class="stat-label">Total Entrepreneurs</small>
-                    <h1>10</h1>
+                    <small class="stat-label">Entrepreneurs</small>
+                    <h1>50 <span style='font-size:16px;'>Monitored</span></h1>
                   </div>
                 </div><!-- row -->
                 
@@ -202,13 +189,13 @@
                 
                 <div class="row">
                   <div class="col-xs-6">
-                    <small class="stat-label">Pending</small>
-                    <h4>3</h4>
+                    <small class="stat-label">Logins Today</small>
+                    <h4>7</h4>
                   </div>
                   
                   <div class="col-xs-6">
-                    <small class="stat-label">% Converted</small>
-                    <h4>76.43%</h4>
+                    <small class="stat-label">Inactive</small>
+                    <h4>4%</h4>
                   </div>
                 </div><!-- row -->
               </div><!-- stat -->
@@ -216,18 +203,20 @@
             </div><!-- panel-heading -->
           </div><!-- panel -->
         </div><!-- col-sm-6 -->
+                  
+                  
         <div class="col-sm-6 col-md-3">
           <div class="panel panel-dark panel-stat">
-            <div class="panel-heading">
+            <div class="panel-heading" style='height:135px;'>
               
               <div class="stat">
                 <div class="row">
                   <div class="col-xs-4">
-                    <%= image_tag("is-money.png") %>
+                    <%= image_tag('is-money.png') %>
                   </div>
                   <div class="col-xs-8">
-                    <small class="stat-label">Entrepreneur Funds</small>
-                    <h1>$655</h1>
+                    <small class="stat-label">Spending</small>
+                    <h1>655  <span style='font-size:16px;'>USD</span></h1>
                   </div>
                 </div><!-- row -->
                 
@@ -235,13 +224,13 @@
                 
                 <div class="row">
                   <div class="col-xs-6">
-                    <small class="stat-label">Last Week</small>
-                    <h4>$32,322</h4>
+                    <small class="stat-label">Q1 Budget</small>
+                    <h4>$315,000</h4>
                   </div>
                   
                   <div class="col-xs-6">
-                    <small class="stat-label">Last Month</small>
-                    <h4>$503,000</h4>
+                    <small class="stat-label">Left in Q1</small>
+                    <h4>12 days</h4>
                   </div>
                 </div><!-- row -->
                   
@@ -250,100 +239,92 @@
             </div><!-- panel-heading -->
           </div><!-- panel -->
         </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="panel panel-danger panel-stat">
-            <div class="panel-heading">
-              
-              <div class="stat">
-                <div class="row">
-                  <div class="col-xs-4">
-                    <%= image_tag("is-document.png") %>
-                  </div>
-                  <div class="col-xs-8">
-                    <small class="stat-label">Test Heading</small>
-                    <h1>45</h1>
-                  </div>
-                </div><!-- row -->
-                
-                <div class="mb15"></div>
-                
-                <small class="stat-label">Dummy Text</small>
-                <h4>01:80:22</h4>
                   
-              </div><!-- stat -->
-              
-            </div><!-- panel-heading -->
-          </div><!-- panel -->
-        </div><!-- col-sm-6 -->
-        
+                  
         <div class="col-sm-6 col-md-3">
           <div class="panel panel-primary panel-stat">
-            <div class="panel-heading">
+            <div class="panel-heading" style='height:135px;'>
               
               <div class="stat">
                 <div class="row">
                   <div class="col-xs-4">
-                    <%= image_tag("is-document.png") %>
+                    <span class="fa fa-bolt" style='font-size:52px;' />
                   </div>
                   <div class="col-xs-8">
-                    <small class="stat-label">Test Heading</small>
-                    <h1>300k+</h1>
+                    <small class="stat-label">Impact</small>
+                    <h1>300 <span style='font-size:16px;'>Jobs</span></h1>
                   </div>
                 </div><!-- row -->
                 
-                <div class="mb15"></div>
+                  <div class="mb15"></div>
                 
-                <small class="stat-label">% Dummy Text</small>
-                <h4>34.23%</h4>
+                <div class="row">
+                  <div class="col-xs-6">
+                    <small class="stat-label">In Agriculture</small>
+                    <h4>125</h4>
+                  </div>
+                  
+                  <div class="col-xs-6">
+                    <small class="stat-label">In Education</small>
+                    <h4>80</h4>
+                  </div>
+                </div><!-- row -->
                   
               </div><!-- stat -->
               
             </div><!-- panel-heading -->
           </div><!-- panel -->
-        </div><!-- col-sm-6 -->
-        
-        <!-- col-sm-6 -->
+       </div><!-- col-sm-6 -->
       </div><!-- row -->
       
-      
-      <div class="panel panel-default">
-      <div class="panel-heading">
-                <h4 class="panel-title">Dummy Table</h4>
-  				</div>
-        <div class="panel-body nopadding">
-          <div class="viewClientsBlock">
-          
-          </div><!-- table-responsive -->
-          
-        </div><!-- panel-body -->
-      </div>
       <div class="row">
         <div class="col-sm-4 col-md-4">
           <div class="panel panel-default">
-            <div class="panel-body">
-               <h5 class="subtitle mb5">Lead breakup by status</h5>
-               <p class="mb15">From 12-01-2013 to 06-30-2014</p>
-               <div id="placeYourChart1" style="text-align: center; height: 200px;"></div>
+            <div class="panel-body" style='height:520px;'>
+               <h5 class="subtitle mb5" style='margin-left:-12px;font-size:19px;'>News from the field</h5>
+                <div style='height:450px;width:100%;overflow-y:scroll;border-width:2px;border-style:solid;'><%= image_tag('facebook_feed.png', width:'100%', style: 'padding:5px') %>
+                
+                </div>
             </div>
           </div>
         </div>
         
         <div class="col-sm-4 col-md-4">
          <div class="panel panel-default">
-            <div class="panel-body">
-            <h5 class="subtitle mb5">Dummy Block</h5>
-            <p class="mb15">From 12-01-2013 to 06-30-2014</p>
-            <div id="placeYourChar2t"  style="text-align: center; height: 200px;"></div>
+            <div class="panel-body" style='height:520px;'>
+            <h1 class="subtitle mb5" style='margin-left:-12px;font-size:19px;'>Entrepreneurs</h1>
+            <p class="mb15">
+                <h4 class="stat stat-label" style='margin-left:10px;font-weight:bold;font-size:14'>Notifications and Alerts</h4>
+                <ul style='margin-left:-20px;'>
+                    <li class="fa fa-newspaper-o" style='font-size:13px;line-height: 120%;'> &nbsp;&nbsp; <B><a href=''>Aliou Bah</a></B> completed <B><a href=''>Pricing Training</a></B>.  <BR>He scored <B>92%</B></li>
+                    <li class="fa fa-newspaper-o" style='margin-top:10px;font-size:13px;line-height: 120%;'> &nbsp;&nbsp; <B><a href=''>Douris Barry’s</a></B> enrollment is down <B>10%</B>  <BR><B><a href=''>Send him a message</a></B>.</li>
+                </ul>
+                <div style='width:100%;text-align:right;font-size:13px;'><a href=''> <B><B class="fa fa-calendar-plus-o"></B> &nbsp; View older notifications</B>  </a></div>
+                
+                <h4 class="stat stat-label" style='margin-left:10px;font-weight:bold;'>Financial Health</h4>
+                <%= image_tag('total_monthly_revenue.png', style:'width:80%;margin-left:20px;border-width:1px;border-style:solid;') %>
+                <div style='margin-top:10px;margin-left:20px;font-size:13px;'><B>90%</B> of your entrepreneurs are <font color='green'>on-track</font> to increase their revenue this month.</div>
+                </p>
             </div>
           </div>
         </div>
         
         <div class="col-sm-4 col-md-4">
          <div class="panel panel-default">
-            <div class="panel-body">
-            <h5 class="subtitle mb5">Appointments/ tasks</h5>
-            <p class="mb15">August 2014</p>
-            <div id="donut-chart2" style="text-align: center; height: 200px;"></div>
+            <div class="panel-body" style='height:520px;'>
+            <h5 class="subtitle mb5" style='margin-left:-12px;font-size:19px;'>Your Organization</h5>
+                <h4 class="stat stat-label" style='margin-left:10px;font-weight:bold;'>Budget</h4>
+            <%= image_tag('monthly_spending.png', style:'width:80%;margin-left:20px;border-width:1px;border-style:solid;') %>
+
+            <h4 class="stat stat-label" style='margin-left:10px;font-weight:bold;'>Your Impact</h4>
+                <ul style='margin-left:-20px;'>
+                <li class="fa fa-bullseye"  style='font-size:13px;line-height: 120%;'> &nbsp;&nbsp;This month, your entrepreneurs have completed <B>65 hours</B> of training</li>
+                <li class="fa fa-bullseye"  style='margin-top:10px;font-size:13px;line-height: 120%;'> &nbsp;&nbsp;<B>76%</B> of last month’s at-risk entrepreneurs are on-track this month</li>
+                </ul>
+                        
+                <h4 class="stat stat-label" style='margin-left:10px;font-weight:bold;'>Survey Results</h4>
+                <ul style='margin-left:-20px;'><li class="fa fa-list-alt"  style='font-size:13px;line-height: 120%;'> &nbsp;&nbsp;<B>43/50</B> entrepreneurs have responded to your survey</B></li></ul>
+                <div style='font-size:13px;text-align:right;'><B><a href=''>Push reminder</a></B> or <B><a href=''>publish results</a></B></div>
             </div>
           </div>
        </div>    
