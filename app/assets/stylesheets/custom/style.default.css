@@ -2083,6 +2083,10 @@ div.error label.error:before {
 	margin-right: 5px;
 }
 
+.translucent {
+    opacity: .3;
+}
+
 .follower-list {
 	padding: 10px;
 }

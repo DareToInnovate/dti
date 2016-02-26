@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Dare to Innovate</title>
-  <%= stylesheet_link_tag "style.default" %>
-  <%= stylesheet_link_tag "font-awesome.min.css" %>
+  <title><%= t('app_title') %></title>
+  <%= stylesheet_link_tag "custom/style.default" %>
+  <%= stylesheet_link_tag "custom/font-awesome.min" %>
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <%= javascript_include_tag("html5shiv") %>
@@ -46,7 +46,7 @@
       
 		<h5 class="sidebartitle">Navigation</h5>
       <ul class="nav nav-pills nav-stacked nav-DemoCRM">
-        <li class="active"><a href="dashboard.html"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+        <li class="active"><a href="dashboard.html"><i class="fa fa-home"></i> <span><%= t("dashboard") %></span></a></li>
         </li>
         <!--<li class="nav-parent active nav-active"><a href="#"><i class="fa fa-users"></i> <span>Entrepreneurs</span></a>-->
          <li><a href="#"><i class="fa fa-institution"></i> <span>My Organization</span></a>
@@ -102,10 +102,21 @@
       <div class="header-right">
         <ul class="headermenu">
           <li>
-            <div class="btn-group">
-              <button class="btn btn-default dropdown-toggle tp-icon" data-toggle="dropdown">
-              <%= image_tag("flag_english.png", height:'20') %> &nbsp;&nbsp;&nbsp; <%= image_tag("flag_france.png", height:'20', style:'opacity:.3') %>
+            <div class="btn-group" style='width:50px;'>
+              <button class="col-sm-2 btn btn-lg dropdown-toggle tp-icon" data-toggle="dropdown">
+                <% if (I18n.locale == :fr) %>
+                    <%= image_tag("flag_fr.png", height:'20') %>
+                <% elsif (I18n.locale == :es) %>
+                    <%= image_tag("flag_es.png", height:'20') %>
+                <% else %>
+                    <%= image_tag("flag_en.png", height:'20') %>
+                <% end %>
               </button>
+              <ul class="dropdown-menu">
+                <li><%= link_to image_tag("flag_fr", height:'20'), :locale => 'fr' %></li>
+                <li><%= link_to image_tag("flag_en", height:'20'), :locale => 'en' %></li>
+                <li><%= link_to image_tag("flag_es", height:'20'), :locale => 'es' %></li>
+              </ul>
             </div>
           </li>
           <li>
@@ -130,7 +141,8 @@
       <!------------ Starting of Dynamic Block------ -->
     <div id="dyanamicBlockStartsDiv">      
     <div class="pageheader">
-<h2>Dashboard </h2>
+
+<h2><%= t("dashboard") %> </h2>
     </div>
     
     <div class="contentpanel">
@@ -349,7 +361,6 @@
 <%= javascript_include_tag("retina.min") %>
 <%= javascript_include_tag("jquery.maskedinput.min") %>
 <%= javascript_include_tag("jquery.tagsinput.min") %>
-<%= javascript_include_tag("bootstrap-fileupload.min") %>
 <%= javascript_include_tag("bootstrap-wizard.min") %>
 <%= javascript_include_tag("jquery.datatables.min") %>
 <%= javascript_include_tag("dataTables.responsive.min") %>
@@ -357,6 +368,7 @@
 <%= javascript_include_tag("bootstrap-wysihtml5") %>
 <%= javascript_include_tag("chosen.jquery.min") %>
 <%= javascript_include_tag("jquery.validate.min") %>
+<%= javascript_include_tag("jquery.turbolinks") %>
 <%= javascript_include_tag("custom") %>
 
 </body>

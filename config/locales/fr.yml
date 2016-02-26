@@ -1,0 +1,75 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+fr:
+  operation_revenue: "Produits d'Exploitation"
+  turnover: "Chiffre d'Affaires"
+  net_turnover: "Chiffre d'Affaires Net"
+  subventions: "Subventions"
+  other_operating_revenue: "Autres produits"
+  operation_revenue_total: "Total des Produits d'Exploitation"
+  
+  operating_cost: "Charges d'Exploitation"
+  goods: "Achats de Marchandises"
+  stock_variation: "Variations de stocks"
+  contract_cost: "Charges de sous traitance"
+  other_external_services: "Autres achats de charges externes"
+  taxes: "Impots taxes et versements assimiles"
+  salaries: "Salaires et traitements"
+  amortization: "Dotations aux amortissements"
+  depreciation: "Dotations aux depreciations et provisions"
+  other_operating_cost: "Autres charges"
+  registration_cost: "Enregistrement societe"
+  accountant: "Comptable"
+  trips_and_restaurants: "Deplacements/restauration"
+  insurance: "Assurance"
+  office_supplies: "Fournitures"
+  operating_cost_total: "Total des charges d'exploitation"
+  operating_revenue: "Resultat d'Exploitation"
+  financial_revenues: "Produits financiers"
+  financial_cost: "Charges financieres"
+  financial_total: "Resultat financier"
+  pre_tax_income: "Resultat courant avant impot"
+  income_taxes: "Impots sur les benefices"
+  total_revenues: "Total des produits"
+  total_cost: "Total des charges"
+  final_income_loss: "Benefice ou perte"
+  
+  login: "Connectez"
+  login_to_access_your_account: "Login to access your account."
+  view_site_in_language: "View the English site"
+  username: "Username"  
+  password: "Password"
+  forgot_your_password: "Forgot Your Password?" 
+  sign_in_submit: "Sign In"
+  contact_us: "Contact Us"
+  help: "Help"
+  copyright: "2015. All Rights Reserved. Dare to Innovate"
+  welcome_to_app: "Welcome to Dare to Innovate!"
+  manage_expenses: "Manage Expense(s)"
+  ability_to_add_more_forms_and_view: "Ability to add more forms and view"
+  view_billing_history_for_entrepreneurs: "View billing history for entrepreneurs"
+  and_much_more: "and much more..."
+  dashboard: "Tableau de Bord"
+  app_title: "Dare to Innovate"
+  switch_language: "English"
+  target_locale: "en"
+  

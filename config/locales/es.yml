@@ -19,7 +19,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
   operation_revenue: "Operation Revenue"
   turnover: "Turnover"
   net_turnover: "Net Turnover"
@@ -64,9 +64,9 @@ en:
   help: "Help"
   copyright: "2015. All Rights Reserved. Dare to Innovate"
   welcome_to_app: "Welcome to Dare to Innovate!"
-  product_selling_point_1: "Analyze portfolio performance"
-  product_selling_point_2: "Analyze portfolio performance"
-  product_selling_point_3: "Actualize and increase impact"
+  manage_expenses: "Manage Expense(s)"
+  ability_to_add_more_forms_and_view: "Ability to add more forms and view"
+  view_billing_history_for_entrepreneurs: "View billing history for entrepreneurs"
   and_much_more: "and much more..."
   dashboard: "Dashboard"
   app_title: "Dare to Innovate"
