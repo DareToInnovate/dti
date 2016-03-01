@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require custom/style.default
- *= require font-awesome.min
+ *= require custom/font-awesome.min
  *= require_tree .
  *= require_self
  */
