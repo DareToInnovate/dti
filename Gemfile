@@ -47,5 +47,6 @@ group :development do
 
   gem "font-awesome-rails"
   gem 'rails_12factor', group: :production
+
 end
 
