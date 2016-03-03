@@ -1176,7 +1176,6 @@ div.error label.error:before {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 }
-}
 
 .tab-pane::after {
 	clear: both;
