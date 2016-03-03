@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   password: nextpage
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysql.sock
 
 development:
   <<: *default
