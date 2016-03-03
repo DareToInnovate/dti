@@ -43,9 +43,9 @@
                     <div class="mb20"></div>
                     <h5><strong><%= t("welcome_to_app") %></strong></h5>
                     <ul>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("selling_point_1") %></li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("selling_point_2") %></li>
-                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("selling_point_3") %></li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("product_selling_point_1") %></li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("product_selling_point_2") %></li>
+                        <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("product_selling_point_3") %></li>
                         <li><i class="fa fa-arrow-circle-o-right mr5"></i> <%= t("and_much_more") %></li>
                     </ul>
                     
@@ -58,17 +58,6 @@
                     <p class="mt5 mb20"><%= t("login_to_access_your_account") %></p>
                     <%= form_tag(:action => 'attempt_login') do %>
                 
-                <% if I18n.locale == :en %>
-                    <div style='width:100%;text-align:right;'><%= link_to :locale => 'fr' do %>
-                         <%= t("view_site_in_language") %> &nbsp;&nbsp;<%= image_tag('flag_guinea', width: 24) %>
-                        <% end %>
-                    </div>
-                <% else %> 
-                    <div style='width:100%;text-align:right;'><%= link_to :locale => 'en' do %>
-                         <%= t("view_site_in_language") %> &nbsp;&nbsp;<%= image_tag('flag_english', width: 24) %>
-                        <% end %>
-                    </div>
-                <% end %>
                 <%= flash[:notice] %>
 			<%= text_field_tag :username, "", class: 'form-control uname', placeholder: 'Username' %>
 			<%= password_field_tag(:password, "", class: "form-control pword", placeholder: "Password") %>
@@ -110,44 +99,6 @@
 <script src="app/js/chosen.jquery.min.js"></script>
 <script src="app/js/jquery.validate.min.js"></script>
 <script src="app/js/custom.js"></script>
-<script>
-var userType = $('select#userType').val(); 
-function checkValidate(){
-	var username = $('#username').val();
-	var password = $('#password').val();
-	var userType = $('select#userType').val();
-	if(userType == ""){	
-		alert("Please select your portal to proceed");
-		document.form2.userType.focus();
-		return false;
-	}
-	else if(username == ""){	
-		alert("Please enter your Username");
-		document.form2.username.focus();
-		return false;
-	}
-	else if(password == ""){	
-		alert("Please enter your Password");
-		document.form2.password.focus();
-		return false;
-	}
-	
-	if(username == "admin" && password == "admin" && userType == "admin"){	
-		window.location = 'app/Admin/dashboard.html';
-		return false;
-	}
-	else if(username == "ent" && password == "ent" && userType == "entrepreneur"){	
-		window.location = 'app/Entrepreneur/dashboard.html';
-		return false;
-	}
-	else{
-		alert('Invalid credentials');
-		document.form2.username.focus();
-		return false;
-	}
-	return true;
-}
-</script>
 </body>
 </html>
 
