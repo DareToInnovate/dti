@@ -46,6 +46,6 @@ group :development do
   gem 'spring'
 
   gem "font-awesome-rails"
-
+  gem "rails_12factor"
 end
 
